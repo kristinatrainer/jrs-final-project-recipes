@@ -1,0 +1,57 @@
+.container-card {
+    background-color: #fbc3b5;
+    height: 10rem;
+    width: 8rem;
+    color:#12524a;
+
+    margin: .5rem;
+    padding: .5rem;
+    transition: .2s;
+    border-radius: .5rem;
+
+   display: grid;
+   text-align: center;
+
+   font-size: 1rem;
+}
+
+
+.container-card:hover {
+    box-shadow: 5px 5px #12524965;
+}
+
+.container-card button {
+    background-color: #fbc3b5;
+    border-radius: .5rem;
+    color: #f98478;
+    transition: .2s;
+    font-size: 2rem;;
+
+}
+
+
+
+/* .container-card button {
+    background-color: #f98478;
+    border-radius: .5rem;
+    color: #fffdfa;
+    transition: .2s; 
+}
+*/
+
+.container-card .icon:hover {
+   color: #fea75d;
+    box-shadow: 2px 2px rgba(18, 82, 73, 0.397);
+    border-radius: 50%;
+    font-size: larger;
+
+}
+
+.container-card .checked {
+    color: #33bda8;
+}
+
+.container-card .checked:hover {
+
+    color: #f98478;
+}
