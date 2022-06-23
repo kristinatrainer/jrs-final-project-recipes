@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Plain Bagels",
+        "difficulty": 1,
+        "ingredients": [
+            {
+                "name": "cream cheese",
+                "category": "dairy"
+            },
+            {
+                "name": "plain bagels",
+                "category": "baked goods"
+            }
+        ],
+        "instructions": [
+            ""
+        ],
+        "mealType": "breafast",
+        "estimatedTime": 5,
+        "cuisine": "american",
+        "tools": [
+            "toaster",
+            "knife"
+        ],
+        "glutenFree": false,
+        "vegan": false
+    }
+]
