@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rampart+One&family=Telex&display=swap');
+
+
+
+.container-meal-page {
+   /* border: solid 2px red; */
+   /* top: 18vh; */
+   /* height:  */
+   height: 68%;
+   width: 100%;
+   
+   /* padding: 2rem; */
+   margin: 2rem;
+   margin-top: 3rem;
+   font-family: 'Telex', sans-serif;
+   
+}
+
+.container-meal-page .heading * {
+   text-align: center;
+   /* padding-bottom:  */
+   margin: 0;
+   color: #32bda7;
+}
+
+.container-meal-page .heading:hover {
+   font-style: italic;
+   color: #fea75d;
+}
