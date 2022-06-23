@@ -1,0 +1,35 @@
+.container-grocery-list-page {
+    /* border: solid 2px red; */
+    /* top: 18vh; */
+    /* height:  */
+    /* height: 65%; */
+    width: 100vw;
+    
+    padding: 2rem;
+    /* margin: 2rem; */
+    margin-top: 3rem;
+    background-color: #32bda7;
+    border-top-left-radius: 3.5rem;
+    border-top-right-radius: 40%;
+    
+    font-family: 'Telex', sans-serif;
+    font-family: 'Rampart One', cursive;
+    
+}
+
+.container-grocery-list-page .gl-heading {
+    color: #e6dedd;
+    /* background-color: #edeff0; */
+    width: fit-content;
+    padding: .5em 1em;
+    border-radius: 50% 25% / 10% 40%;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+
+.container-grocery-list-page .gl-heading:hover {
+    font-style: italic;
+    color: #fea75d;
+    
+ }
