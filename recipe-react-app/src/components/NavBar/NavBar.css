@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rampart+One&display=swap');
+
+.nav-bar-root * {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-bar-root {
+    background-color: #33bda8;
+    
+    height: 18vh;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    position: absolute;
+    bottom: 0;
+    
+    
+}
+
+.nav-bar-root .nav-bar-switch-button>button:hover{
+    color: #f98478;
+    box-shadow: 5px 5px hwb(172 7% 68% / 0.397);
+    cursor: pointer;   
+}
+.nav-bar-root .logo {
+    font: 400 3vh 'Telux';
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Rampart One', cursive;
+
+    
+    min-width: fit-content;
+    white-space: nowrap;
+    text-align: center;
+    color: #f1ece7;
+    font-weight: bolder;     
+    font-size: 4vh;
+    padding: 1rem;
+}
+
+/* .nav-bar-root .nav-bar-switch-button {
+    
+    background-color: hsl(28, 99%, 68%);
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    
+    text-align: center;
+    margin: auto;
+    
+    
+} */
+
+.nav-bar-root .nav-bar-switch-button>button{ 
+    margin: auto;
+    background-color: rgba(255, 255, 0, 0);
+    border: none;
+    height: 8rem;
+    background-color: hsl(28, 99%, 68%);
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    font-size: 4rem;
+    color: #edeff0;
+    transition: .2s;
+}
+
+.nav-bar-root .hamburger {
+    font-size: 2.5rem;
+    transition: .2s;
+    cursor: pointer;   
+    color: #f1ece7;
+}
+
+.nav-bar-root .hamburger .div:hover {
+    box-shadow: 5px 5px hwb(172 7% 68% / 0.397);
+}
