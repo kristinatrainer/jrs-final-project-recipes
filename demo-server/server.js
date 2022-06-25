@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // ****Only update these to match routes - hook up the pieces of the api here()
 require('./app/index')
 require('./app/routes/meals.routes')(app); // file extension to recipes routes file
-require('./app/routes/users.routes')(app) // file extension to Users routes file
+// require('./app/routes/users.routes')(app) // file extension to Users routes file
 
 
 // tells server to load
