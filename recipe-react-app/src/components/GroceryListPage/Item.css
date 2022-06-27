@@ -1,9 +1,18 @@
-.not-checked {
-    color: rgb(241, 229, 232);
+form {
+    padding-bottom: .5rem;
+    padding-left: 3rem;
 }
 
+form span {
+   padding-left: .5rem;
+}
 
-/* :checked {
+/* .not-checked {
+    color: rgb(241, 229, 232);
+} */
+
+
+.checked {
     color: red;
     text-decoration: line-through darkslategrey;
-} */
+}

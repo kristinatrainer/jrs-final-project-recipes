@@ -18,24 +18,31 @@ export default function GroceryList() {
   function getGroceryListItems() {
     let flatCart = [];
     let visualCart = [];
+    console.log("flat cart=",flatCart, "visual cart=", visualCart)
     for (let meal of cart) {
       for (let ingredient of meal.ingredients) {
         visualCart.push(ingredient)
+        console.log(ingredient)
+        console.log("flat cart=",flatCart, "visual cart=", visualCart)
       }
     }
     outerLoop:
     for (let ingredient of flatCart) {
       for (let ing of visualCart) {
         if (ingredient.name == ing.name) {
+          console.log(ingredient.name == ing.name)
           ing.count++
           continue outerLoop;
         }
       }
       // if ingredient is not in visual cart, then push
       visualCart.push({ ...ingredient, count: 1 })
+      console.log("flat cart=",flatCart, "visual cart=", visualCart)
     }
     return visualCart;
   }
+
+
   
 
 

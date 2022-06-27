@@ -11,6 +11,7 @@
     background-color: #32bda7;
     border-top-left-radius: 3.5rem;
     border-top-right-radius: 40%;
+    height: 100%;
     
     font-family: 'Telex', sans-serif;
     font-family: 'Rampart One', cursive;
@@ -32,4 +33,8 @@
     font-style: italic;
     color: #fea75d;
     
+ }
+
+ .gl-body {
+    overflow: auto;
  }
