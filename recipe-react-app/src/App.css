@@ -12,7 +12,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
-
+overflow: auto;
   
   /* align-items: center; */
   margin: 0;

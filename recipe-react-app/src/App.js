@@ -6,6 +6,7 @@ import MealPage from './components/MealPage/MealPage';
 import AddMealPage from './components/AddMealPage/AddMealPage';
 import NavBar from './components/NavBar/NavBar';
 import { useLocalStorage } from './services/localstorage.service';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 
 export const Context = createContext(null)
@@ -119,6 +120,7 @@ function App() {
             <Route path="/" element={<MealPage />}></Route>
             <Route path="/grocerylist" element={<GroceryListPage />}> </Route>
             <Route path="/addmeal" element={<AddMealPage />}></Route>
+            <Route path="/*" element={<ErrorPage/>}> </Route>
           </Routes>
         </div>
         <NavBar />
