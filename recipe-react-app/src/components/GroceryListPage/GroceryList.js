@@ -11,19 +11,33 @@ export default function GroceryList() {
 
   const { addMealToCart, cart, removeMealFromCart, isMealInCart } = useContext(Context)
 
-  const [category, setCategories] = useState("")
+  const category =
+    ["baked goods",
+      "produce",
+      "dairy",
+      "dry goods",
+      "meat",
+      "seafood",
+      "freezer"
+    ]
 
-
+  let allCategories = category.map((c, i) => (
+    <ul key={i}>
+      {c}
+    </ul>
+  ))
 
   function getGroceryListItems() {
     let flatCart = [];
     let visualCart = [];
-    console.log("flat cart=",flatCart, "visual cart=", visualCart)
+    console.log("flat cart=", flatCart, "visual cart=", visualCart)
+    console.log("cart", cart)
+
     for (let meal of cart) {
       for (let ingredient of meal.ingredients) {
         visualCart.push(ingredient)
         console.log(ingredient)
-        console.log("flat cart=",flatCart, "visual cart=", visualCart)
+        console.log("flat cart=", flatCart, "visual cart=", visualCart)
       }
     }
     outerLoop:
@@ -37,14 +51,17 @@ export default function GroceryList() {
       }
       // if ingredient is not in visual cart, then push
       visualCart.push({ ...ingredient, count: 1 })
-      console.log("flat cart=",flatCart, "visual cart=", visualCart)
+      console.log("flat cart=", flatCart, "visual cart=", visualCart)
     }
-    return visualCart;
+    console.log(visualCart)
+    return visualCart;  /// VisualCart ==>[{}]
   }
 
 
-  
 
+  // let displayItems = (
+  //   getGroceryListItems
+  // )
 
 
 
@@ -54,14 +71,65 @@ export default function GroceryList() {
 
   return (
     <div className="grocery-list-container">
-
-      <div name="produce"> {category[0]}
-
-        {getGroceryListItems().map(( ing, i) => (
+      <div>
+        <div>
+          {/* {category[0]} */}
+          {getGroceryListItems(category[0]).map((ing, i) => (
+            <Item key={i} {...ing} />
+          ))
+          }
+        </div>
+        {/* <div>
+          {category[1]}
+          {getGroceryListItems().map((ing, i) => (
+            <Item key={i} {...ing} />
+          ))
+          }
+        </div>
+        <div>
+          {category[2]}
+          {getGroceryListItems().map((ing, i) => (
+            <Item key={i} {...ing} />
+          ))
+          }
+        </div>
+        <div>
+          {category[3]}
+          {getGroceryListItems().map((ing, i) => (
+            <Item key={i} {...ing} />
+          ))
+          }
+        </div>
+        <div>
+          {category[4]}
+          {getGroceryListItems().map((ing, i) => (
+            <Item key={i} {...ing} />
+          ))
+          }
+        </div>
+        <div>
+          {category[5]}
+          {getGroceryListItems().map((ing, i) => (
+            <Item key={i} {...ing} />
+          ))
+          }
+        </div>
+        <div>
+          {category[6]}
+          {getGroceryListItems().map((ing, i) => (
+            <Item key={i} {...ing} />
+          ))
+          }
+        </div> */}
+      </div>
+      <br />
+      {/* <div>THIS IS THE WAY THAT WORKED</div>
+      <div name="categories"> {allCategories}
+        {getGroceryListItems().map((ing, i) => (
           <Item key={i} {...ing} />
         ))
         }
-      </div>
+      </div> */}
     </div>
   )
 }

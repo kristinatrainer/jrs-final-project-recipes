@@ -45,7 +45,7 @@ export default function NavBar() {
             }
             </div>
             <div className='hamburger'>
-                <FontAwesomeIcon icon={faEllipsisVertical} />
+                {/* <FontAwesomeIcon icon={faEllipsisVertical} /> */}
             </div>
         </div>
     )
