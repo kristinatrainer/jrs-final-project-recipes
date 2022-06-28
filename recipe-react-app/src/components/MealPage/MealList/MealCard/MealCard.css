@@ -25,7 +25,8 @@
     border-radius: .5rem;
     color: #f98478;
     transition: .2s;
-    font-size: 2rem;;
+    font-size: 2rem;
+    border: none;
 
 }
 
@@ -49,6 +50,9 @@
 
 .container-card .checked {
     color: #33bda8;
+    font-size: 2.5rem;
+    box-shadow: 2px 2px rgba(18, 82, 73, 0.397);
+    border-radius: 50%;
 }
 
 .container-card .checked:hover {

@@ -4,10 +4,11 @@
     
     columns: 2;
     place-content: center;
-    justify-content: space-between;
 
-    overflow: scroll;
-    
+    overflow: hidden;
+    padding-bottom: 10rem;
+
+    transition: 2s;
 
   
 }
