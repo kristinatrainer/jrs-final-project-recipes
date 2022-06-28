@@ -1,0 +1,15 @@
+
+.error-page-root {
+    color: #32bda7;
+    padding: 10%;
+    text-align: center;
+}
+
+
+
+.error-page-root .face-icon {
+    height: fit-content;
+    font-size: 14rem;
+    margin-top: 2rem;
+}
+
